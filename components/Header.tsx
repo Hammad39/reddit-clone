@@ -66,7 +66,11 @@ export default function <Image>() {
           alt=""
         />
       </div>
+      <div className="flex-1">
+      <p className="truncate">{session?.user?.name}</p>
       <p className="text-gray-400">Sign out </p>
+      </div>
+      
     </div>)
       : 
       (      <div onClick={()=>signIn()}  className=" hover:cursor-pointer hidden lg:flex items-center space-x-2 border border-gray-200 p-2">
